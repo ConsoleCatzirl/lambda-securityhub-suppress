@@ -1,4 +1,6 @@
 ci:
+  skip:
+    - cfn-python-lint  # https://github.com/aws-cloudformation/cfn-lint/issues/4579
   autoupdate_schedule: monthly
 repos:
 -   repo: https://github.com/pre-commit/pre-commit-hooks
